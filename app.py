@@ -16,7 +16,7 @@ st.set_page_config(page_title="Mayanagri Mumbai House Price Predictor", layout="
 # Load model & columns
 # =========================
 # pipeline = joblib.load("model.joblib")
-# model_columns = joblib.load("model_columns.pkl")  # columns used in training
+model_columns = joblib.load("model_columns.pkl")  # columns used in training
 import os
 import joblib
 import streamlit as st
