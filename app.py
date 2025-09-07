@@ -15,9 +15,22 @@ st.set_page_config(page_title="Mayanagri Mumbai House Price Predictor", layout="
 # =========================
 # Load model & columns
 # =========================
-pipeline = joblib.load("model.joblib")
-model_columns = joblib.load("model_columns.pkl")  # columns used in training
+# pipeline = joblib.load("model.joblib")
+# model_columns = joblib.load("model_columns.pkl")  # columns used in training
+import os
+import joblib
+import streamlit as st
+from train_model import build_and_train_model
 
+# =========================
+# Load or Train Model
+# =========================
+MODEL_PATH = "model.joblib"
+
+if os.path.exists(MODEL_PATH):
+    pipeline = joblib.load(MODEL_PATH)
+else:
+    pipeline = build_and_train_model()  # train inside cloud
 # =========================
 # Load Gemini API key
 # =========================
