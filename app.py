@@ -124,8 +124,8 @@ if submitted:
             model="gemini-2.5-flash-lite",
             contents=prompt
         )
-        gpt_reply = response['choices'][0]['message']['content'].strip()
-        st.info(f"💡 Gemini Prediction & Explanation:\n{gpt_reply}")
         
+        gpt_prediction = response.text.strip()
+        st.info(f"💡 Gemini Predicted Price: ₹{gpt_prediction}")
     except Exception as e:
         st.error(f"Error contacting Gemini API: {e}")
