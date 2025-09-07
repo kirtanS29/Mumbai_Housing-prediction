@@ -25,12 +25,16 @@ from train_model import build_and_train_model
 # =========================
 # Load or Train Model
 # =========================
+
+
 MODEL_PATH = "model.joblib"
 
-if os.path.exists(MODEL_PATH):
-    pipeline = joblib.load(MODEL_PATH)
-else:
-    pipeline = build_and_train_model()  # train inside cloud
+if not os.path.exists(MODEL_PATH):
+    from train_model import voting_reg
+    joblib.dump(voting_reg, MODEL_PATH)
+
+pipeline = joblib.load(MODEL_PATH)
+
 # =========================
 # Load Gemini API key
 # =========================
