@@ -106,3 +106,38 @@ pip install -r requirements.txt
 
 # Run the app
 streamlit run app.py
+
+Usage
+
+Open the Streamlit UI.
+
+Input details like area, bedrooms, location, resale status, amenities.
+
+Get an instant housing price prediction.
+
+(Optional) View AI-based explanations through the Gemini API.
+
+Results Summary
+
+Dataset: Mumbai.csv
+
+Preprocessing: Outlier filtering via IQR
+
+Feature engineering: Amenity_Count, Location_AvgPrice
+
+Model: Voting Regressor (RF + XGB + Polynomial + Linear)
+
+R² Score: 0.43
+
+⚠️ Note: The modest performance is expected due to missing temporal context and inherent city-specific volatility.
+
+Contribution
+
+Contributions welcome! Please fork the repository and submit a pull request.
+Potential contributions:
+
+Enrich the dataset
+
+Enhance model accuracy
+
+Improve UI/UX with interactive visuals
