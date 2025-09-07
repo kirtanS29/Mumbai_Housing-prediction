@@ -106,7 +106,7 @@ pip install -r requirements.txt
 
 # Run the app
 streamlit run app.py
-
+---
 ## Usage
 
 -Open the Streamlit UI.
@@ -129,7 +129,8 @@ streamlit run app.py
 
 -R² Score: 0.43
 
---⚠️ Note: The modest performance is expected due to missing temporal context and inherent city-specific volatility.
+-⚠️ Note: The modest performance is expected due to missing temporal context and inherent city-specific volatility.
+---
 
 ##Contribution
 
