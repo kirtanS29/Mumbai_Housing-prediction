@@ -1,7 +1,6 @@
 import streamlit as st
 import joblib
 import pandas as pd
-import shap
 import matplotlib.pyplot as plt
 import os
 from dotenv import load_dotenv
