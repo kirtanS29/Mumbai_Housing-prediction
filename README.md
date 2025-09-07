@@ -106,7 +106,9 @@ pip install -r requirements.txt
 
 # Run the app
 streamlit run app.py
+
 ---
+
 ## 🎯 Usage
 
 1. Open the **Streamlit UI** in your browser or visit [Mumbai Housing App](https://mumbaihousing.streamlit.app/).  
