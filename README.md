@@ -107,38 +107,32 @@ pip install -r requirements.txt
 # Run the app
 streamlit run app.py
 ---
-## Usage
+## 🎯 Usage
 
--Open the Streamlit UI.
+1. Open the **Streamlit UI** in your browser or visit [Mumbai Housing App](https://mumbaihousing.streamlit.app/).  
+2. Enter details such as **area, bedrooms, location, resale status, and amenities**.  
+3. Get an **instant housing price prediction**.  
+4. *(Optional)* Use the **Gemini AI integration** for market insights and explanations.  
 
--Input details like area, bedrooms, location, resale status, amenities.
-
--Get an instant housing price prediction.
-
--(Optional) View AI-based explanations through the Gemini API.
-
--Results Summary
-
--Dataset: Mumbai.csv
-
--Preprocessing: Outlier filtering via IQR
-
--Feature engineering: Amenity_Count, Location_AvgPrice
-
--Model: Voting Regressor (RF + XGB + Polynomial + Linear)
-
--R² Score: 0.43
-
--⚠️ Note: The modest performance is expected due to missing temporal context and inherent city-specific volatility.
 ---
 
-##Contribution
+## 📊 Results Summary
 
-Contributions welcome! Please fork the repository and submit a pull request.
-Potential contributions:
+- **Dataset**: `Mumbai.csv`  
+- **Preprocessing**: Outlier filtering using IQR  
+- **Feature Engineering**: `Amenity_Count`, `Location_AvgPrice`  
+- **Model**: Ensemble **Voting Regressor** (Random Forest + XGBoost + Polynomial Regression + Linear Regression)  
+- **R² Score**: **0.43**  
 
-Enrich the dataset
+⚠️ **Note:** The modest R² score is expected due to missing **temporal context** (no year info) and the **volatile nature** of Mumbai’s housing market.  
 
-Enhance model accuracy
+---
 
-Improve UI/UX with interactive visuals
+## 🤝 Contribution
+
+We welcome contributions! 🎉 Please **fork** the repository and submit a **pull request**.  
+
+Ways you can contribute:  
+- 📌 Add or update datasets  
+- 📌 Improve model accuracy with better features or algorithms  
+- 📌 Enhance UI/UX with interactive visuals and insights  
