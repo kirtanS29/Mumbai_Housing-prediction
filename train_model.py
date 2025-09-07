@@ -105,6 +105,6 @@ def build_and_train_model():
 
     # Save
     joblib.dump(voting_reg, "model.joblib")
-    joblib.dump(X.columns.tolist(), "model_columns.pkl")
+    #joblib.dump(X.columns.tolist(), "model_columns.pkl")
 
     return voting_reg
